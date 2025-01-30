@@ -1,0 +1,114 @@
+.section{
+    text-align: center;
+    
+    &__title{
+        text-align: center;
+        font-family:"Raleway";
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 35px;
+        margin-top: 5%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    &__container{
+        width: 100%;
+        position: relative;
+
+        &__Ellipsepink{
+            margin-top: 1.6rem;
+            width: 4rem;
+            height: 4rem;
+        }
+
+        &__Person{
+            position: absolute;
+            width: 2.7rem;
+            height: 3.2rem;
+            right:39%;
+            top: 15%;
+        }
+    }
+    &__number{
+        font-family:"Raleway";
+        font-weight: 800;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+    }
+    &__entries{
+        font-family: "Raleway";
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: #A5A5A5;
+        margin-top: 1rem;
+    }
+     
+    .container__second{
+        width: 100%;
+        position:relative;
+        
+
+        &__eye{
+            position: absolute;
+            width: 4.2rem;
+            height: 2.3;
+            margin-top: 2.2rem;
+            margin-left: 1.3rem;
+        }
+        &__Ellipseblue{
+            margin-top: 1.5rem;
+        }
+    }
+    
+    .container__third{
+        width: 100%;
+        position:relative;
+
+        &__Catalog{
+            position: absolute;
+            width: 3.2rem;
+            height: 3rem;
+            margin-top: 1.6rem;
+            margin-left: 2rem;
+        }
+        &__Ellipsegreen{
+            margin-top: 1.5rem;
+            
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+
+    .section{
+
+        padding-left: 25rem;
+        padding-right: 25rem;
+    
+        &__title{
+            font-weight: 400;
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+           
+        }
+        
+        &__dates{
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+        }
+
+        &__container{
+
+            &__Person{
+                right: 38%;
+            }
+        }
+
+    }
+    
+}
