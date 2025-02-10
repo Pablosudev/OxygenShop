@@ -89,13 +89,21 @@ body {
     margin-right: 4%;
     width: 80%;
   }
-  .navbar__ul :hover {
-    border-bottom: 4px solid #08A6E4;
-    color: black;
-  }
   .navbar__ul__li2 {
     color: #A5A5A5;
     margin-right: 4rem;
+    position: relative;
+  }
+  .navbar__ul__li2:hover {
+    color: black;
+  }
+  .navbar__ul__li2:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid #08A6E4;
   }
   .navbar__title {
     display: none;
