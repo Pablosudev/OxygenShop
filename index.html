@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <title>Oxygen Shop</title>
     </head>
     <body id="body">
@@ -151,7 +152,27 @@
                 </article>
             </article>
         </section>
-        <section id="slider" class="slider">
+
+        <div class="swiper">
+           
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide"><img class="slider__art" id="Art" src="Slider/iso-republic-art-supplies-010.png" alt="ImagenArt"></div>
+              <div class="swiper-slide"><img class="slider__books" id="Books" src="Slider/iso-republic-books-plant.jpg" alt="ImagenBooks"></div>
+              <div class="swiper-slide"><img class="slider__laptops" id="Laptops" src="Slider/picography-delicate-hands-using-laptops.jpg" alt="ImageLaptops"></div>
+              ...
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            
+            <div class="swiper-scrollbar"></div>
+          </div>
+        <!--<section id="slider" class="slider">
             <button id="buttonLeft" class="slider__buttonLeft"> < </button>
             <img class="slider__art" id="Art" src="Slider/iso-republic-art-supplies-010.png" alt="ImagenArt">
             <img class="slider__books" id="Books" src="Slider/iso-republic-books-plant.jpg" alt="ImagenBooks">
@@ -160,7 +181,7 @@
             <button id="buttonLaptops" class="slider__buttonLaptops"></button>
             <button id="buttonBooks" class="slider__buttonBooks"></button>
             <button id="buttonArt" class="slider__buttonArt"></button>
-        </section>
+        </section>-->
         <section class="section__question">
             <article class="section__question__article">
                 <h2 class="section__question__article__title">Any questions?</h2>
@@ -207,7 +228,7 @@
         <script src="Slider.js"></script>
         <script src="formulario.js"></script>
         <script src="FooterButton.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
        
     </body>
 </html>
