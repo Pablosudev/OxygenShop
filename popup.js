@@ -2,6 +2,7 @@ const popUp = document.getElementById("popUp");
 const buttonClose = document.getElementById("buttonClose");
 const buttonEmail = document.getElementById("buttonEmail");
 const input = document.getElementById("inputPopUp");
+const body = document.getElementById("body")
 const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const openPopUp = setTimeout(() => {
@@ -9,9 +10,13 @@ const openPopUp = setTimeout(() => {
 }, 5000);
 
 
-buttonClose.addEventListener("click", () => {
-  popUp.close();
-});
+window.addEventListener('click', (event) => {
+  if (event.target === popUp) {
+    popUp.close()
+  }
+  
+})
+
 
 buttonEmail.addEventListener("click", () => {
   event.preventDefault();
@@ -44,12 +49,4 @@ buttonEmail.addEventListener("click", () => {
     });
 });
 
-window.addEventListener("click", (event) => {
-  if (
-    popUp.open &&
-    !popUp.contains(event.target) &&
-    event.target !== buttonClose
-  ) {
-    popUp.close(); // Cerramos el pop-up
-  }
-});
+
