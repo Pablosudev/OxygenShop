@@ -1,0 +1,89 @@
+
+.slider{
+   display: none;
+
+    &__art{
+        display: block;
+    }
+    &__books{
+        display: none;
+    }
+    &__laptops{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    .slider{
+        display: block;
+        position: relative;
+        left: 30%;
+        margin-top: 4rem;
+        
+        &__buttonRight{
+            position:absolute;
+            top: 50%;
+            right: 60%;
+            border-radius: 100%;
+            border-color: transparent;
+            background-color: aliceblue;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+        }
+        &__buttonLeft{
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            border-radius: 100%;
+            border-color: transparent;
+            background-color: aliceblue;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+        }
+        &__buttonArt{
+            position: absolute;
+            border-radius: 100%;
+            border-color: transparent;
+            background-color: #08A6E4;
+            padding: 0.2rem;
+            bottom: 3%;
+            left: 17%;
+            
+        }
+        &__buttonBooks{
+            position: absolute;
+            border-radius: 100%;
+            border-color: transparent;
+            background-color: white;
+            padding: 0.2rem;
+            bottom: 3%;
+            left: 20%;
+        }
+        &__buttonLaptops{
+            position: absolute;
+            border-radius: 100%;
+            border-color: transparent;
+            background-color: white;
+            padding: 0.2rem;
+            bottom: 3%;
+            left: 23%;
+        }
+        &__art{
+             display: block;
+             width: 50rem;
+        }
+        &__books{
+             display: none;
+             width: 50rem;
+        }
+        &__laptops{
+             display: none;
+             width: 50rem;
+        }
+     }
+}

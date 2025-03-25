@@ -1,0 +1,110 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 3px 6px 0px #0000004A;
+
+    &__titlescreen{
+        display:none;
+    }
+    &__ul{
+        display: none;
+    }
+    &__title{
+        display:inline-block;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        color: #08A6E4; 
+        font-weight: 300;
+        font-size: 2rem;
+        font-family: "Raleway";
+        position: absolute;
+        
+    }
+    &__image{
+        display: inline-block;
+        width: 1.5rem;
+        margin-top: 1.8rem;
+        margin-left: 86%;
+        position: relative;
+    }
+
+    &__progress{
+        position: fixed;
+        width: 100%;
+        height: 4px;
+        top: 0;
+        z-index: 1000;
+        
+        &__bar{
+            
+            width:0%;
+            height: 100%;
+            background-color:#08A6E4;
+            z-index: 4;
+        }
+    }
+    &__uljs{
+        display: none;
+        text-align: center;
+        background-color:white;
+        font-family: "Raleway";
+        margin-top: 1rem;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        &__p{
+            margin-top: 0.4rem;
+        }
+    }
+}
+@media screen and (min-width: 1000px){
+
+    .navbar{
+        display:inline-flex;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar__titlescreen{
+        display: flex;   
+        margin-top: 1rem;
+        color: #08A6E4; 
+        font-weight: 300;
+        font-size: 2rem;
+        font-family: "Raleway";
+        margin-left: 4%;
+        white-space: nowrap;
+        margin-bottom: 1rem;
+    }
+
+    .navbar__ul{
+        display: inline-flex;
+        justify-content: flex-end;
+        list-style: none;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 0.68rem;
+        line-height: 0.9rem;
+        margin-right: 4%;
+        width: 80%;
+        &__li2 {
+            color: #A5A5A5;
+            margin-right: 4rem;
+            position: relative;  
+        }
+        &__li2:hover {
+            color: black;  
+        }
+        &__li2:hover::after {
+            content: '';  
+            position: absolute;  
+            bottom: -28px;  
+            left: 0;
+            width: 100%;
+            border-bottom: 3px solid #08A6E4;
+        }
+    }
+    .navbar__title{
+        display:none;
+    }
+    .navbar__image{
+        display: none;
+    }
+}

@@ -1,0 +1,186 @@
+.header{
+    text-align: center;
+    width: 100%;
+
+
+    &__popUp{
+        margin-left: 1.2rem;
+        margin-top: 5rem;
+        border-color: #08A6E4;
+        border-radius: 2rem ;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        &__title{
+            font-family: "Open Sans";
+            margin-bottom: 0.5rem;
+        }
+        &__email{
+            font-family: "Raleway";
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        &__buttonClose{
+            position:absolute;
+            top: 3%;
+            right: 5%;
+            border-radius: 1rem;
+            background-color: #08A6E4;
+            border: transparent;
+            padding-top: 0.5rem;
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
+            padding-bottom: 0.5rem;
+        }
+        &__input{
+            border-radius: 0.5rem;
+            display: block;
+            margin-left: 5rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            border: 1px solid #08A6E4;
+        }
+        &__buttonSend{
+            border-radius: 0.8rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border: 1px solid #08A6E4;
+            background-color: #08A6E4;
+            font-family: "Raleway";
+        }
+    }
+
+    &__title{
+        text-align: center;
+        font-family: "Raleway";
+        font-weight: 400;  
+        font-size: 2.1rem;
+        margin-top: 6rem;
+        color:black;
+    }
+    &__opening{
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+        margin-top: 5%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    &__button{
+        margin-top: 6%;
+        width: 17.3rem ;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2.5rem;
+        background-color: #08A6E4;
+        border: transparent;
+        color: white;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight:700;
+        box-shadow: 5px 10px 14px 0px #07ACE64A;
+
+    }
+    &__image{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    
+   
+        
+    .header__title{
+        font-size: 3rem;
+        margin-top: 9rem;
+     }
+    .header__opening{
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 1rem;
+    }
+    .header__button{
+        margin-top: 2rem;
+        width: 25rem;
+    }
+    .header__image{
+        display: none;
+    }
+    
+    .header__pc{
+        width: 100%;
+        height: auto;
+    }
+    .header__popUp{
+        width: 60%;
+        height: 50%;
+        position: absolute;
+        left: 20%;
+        top: 10%;
+        border-color: #08A6E4;
+        &__title{
+            text-align: center;
+            font-family: "Raleway";
+            font-weight: 400;  
+            color: #08A6E4;
+            border-color: #08A6E4;
+            margin-top: 6%;
+            margin-bottom: 1rem;
+        }
+        &__buttonClose{
+            position: absolute;
+            right: 2%;
+            top: 4%;
+            border-radius: 100%;
+            border-color: transparent;
+            background-color: #08A6E4;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+        }
+        &__buttonSend{
+            width: 17.3rem ;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 2.5rem;
+            background-color: #08A6E4;
+            border: transparent;
+            color: white;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight:700;
+            box-shadow: 5px 10px 14px 0px #07ACE64A;
+            position: absolute;
+            bottom: 20%;
+            left: 37%;
+        }
+        &__input{
+            position: absolute;
+            left: 25%;
+            padding-left: 6rem;
+            padding-right: 8rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            display: block;
+        }
+        &__email{
+            font-family: "Raleway";
+            font-weight: 400;  
+            color: #08A6E4;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 999px){
+    .header__pc{
+        display: none;
+    }
+
+}

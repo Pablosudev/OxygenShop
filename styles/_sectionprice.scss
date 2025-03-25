@@ -1,0 +1,383 @@
+
+.title__price{
+    text-align: center;
+    margin-top: 2rem;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.6rem;
+}
+.currency{
+    position:absolute;
+    left: 42%;
+}
+.article__basic{
+    border: 1px solid #FB3B64;
+    border-radius: 1.1rem;
+    position: relative;
+    width: 18rem;
+    height: 15rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    
+
+    &__title{
+        top: 30%;
+        left: 17%;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        color: #13253B;
+        position: absolute;
+    }
+
+    &__price{
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: #FB3B64;
+        bottom: 37%;
+        left: 14%;
+        position: absolute;
+    }
+
+    &__list{
+        right: 3%;
+        top: 25%;
+        list-style: none;
+        position: absolute;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+
+        &__date{
+            margin-bottom: 0.5rem ;
+        }
+    }
+
+    &__button{
+        position: absolute;
+        border-radius: 1.5rem;
+        background: #EB476E;
+        border: transparent;
+        color: white;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        padding-left: 3.3rem;
+        padding-right: 3.3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        left: 25%;
+        bottom: -10%;
+    }
+}
+.article__professional{
+    position:relative;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    border: 1px solid #07ACE6;
+    border-radius: 1.1rem;
+    width: 18rem;
+    height: 15rem;
+    
+
+    &__title{
+        position: absolute;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        top: 30%;
+        left: 8%;
+    }
+    &__price{
+        position: absolute;
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 2.8rem;
+        line-height: 3.7rem;
+        color: #07ACE6;
+        bottom: 37%;
+        left: 13%;
+    }
+    &__offer{
+        position: absolute;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+        bottom: 30%;
+        left: 16%;
+    }
+
+    &__list{
+        position: absolute;
+        right: 2%;
+        top: 20%;
+        list-style: none;
+        position: absolute;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+
+        &__date{
+            margin-bottom: 0.5rem ;
+        }
+    }    
+
+    &__button{
+        position: absolute;
+        border-radius: 1.5rem;
+        background: #07ACE6;
+        border: transparent;
+        color: white;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        padding-left: 3.6rem;
+        padding-right: 3.6rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        left: 25%;
+        bottom: -10%;
+    }
+}
+
+.article__premium{
+    position: relative;
+    width: 18.3rem;
+    height: 15.6rem;
+    border: 1px solid #55DFB4;
+    border-radius: 1.1rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
+
+    &__title{
+        position: absolute;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        top: 30%;
+        left: 15%;
+    }
+
+    &__price{
+        position: absolute;
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 2.87rem;
+        line-height: 3.8rem;
+        color: #55DFB4;
+        bottom: 37%;
+        left: 16%;
+
+    }
+
+    &__offer{
+        position: absolute;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+        bottom: 30%;
+        left: 16%;
+    }
+
+    &__list{
+        position: absolute;
+        right: 3%;
+        top: 25%;
+        list-style: none;
+        position: absolute;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+
+        &__date{
+            margin-bottom: 0.5rem ;
+        }
+    }
+
+    &__button{
+        position: absolute;
+        border-radius: 1.5rem;
+        background: #55DFB4;
+        border: transparent;
+        color: white;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        padding-left: 3.3rem;
+        padding-right: 3.3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        left: 25%;
+        bottom: -10%;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+
+    .currency{
+        display: block;
+        position:absolute;
+        left: 49%;
+    
+    }
+
+    .article{
+        display: flex;
+        justify-content:space-around ;
+        margin-top: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        
+    
+        &__basic{
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 5%;
+            width: 23rem;
+            height: 30rem;
+
+            
+
+            &__title{
+                top: 5%;
+                left: 45%;
+            }
+
+            &__price{
+                top: 14%;
+                left: 41%;
+            }
+
+            &__list{
+                left: 5%;
+                top:45%;
+                text-align: center;
+
+                &__date{
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &__button{
+                bottom: -5%;
+                left: 30%;
+            }
+        }
+
+        &__professional{
+            margin: 0%;
+            width: 23rem;
+            height: 30rem;
+            &__title{
+                top: 5%;
+                left: 35%;
+            }
+
+            &__price{
+                top: 14%;
+                left: 38%;
+            }
+
+            &__offer{
+                top: 30%;
+                left: 40%;
+            }
+
+            &__list{
+                left: 5%;
+                top:45%;
+                text-align: center;
+
+                &__date{
+                    margin-bottom: 1rem;
+                }
+            }
+            &__button{
+                bottom: -5%;
+                left: 30%;
+            }
+        }
+    
+
+        &__premium{
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 3%;
+            margin-right: 0%;
+            width: 23rem;
+            height: 30rem;
+
+            &__title{
+                top: 5%;
+                left: 40%;
+            }
+
+            &__price{
+                top: 14%;
+                left: 41%;
+            }
+
+            &__offer{
+                top: 30%;
+                left: 42%;
+            }
+
+            &__list{
+                left: 5%;
+                top:45%;
+                text-align: center;
+
+                &__date{
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &__button{
+                bottom: -5%;
+                left: 30%;
+            }
+        }
+        
+    }
+   
+}
+.swiper {
+    width:100%;
+    height: 20rem; 
+    margin-top: 15%;
+  }
+.swiper-slide img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+@media screen and (min-width: 1000px) {
+    .swiper {
+      width: 50%; 
+      height: auto; 
+    }
+  
+    .swiper-slide img {
+      width: 100%; 
+      height: auto; 
+      margin-top: 10%; 
+    }
+}

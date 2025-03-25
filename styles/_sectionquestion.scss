@@ -1,0 +1,117 @@
+.section__question{
+
+    &__article{
+        &__title{
+            font-family: "Raleway";
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 2.9rem;
+            margin-left: 1.8rem;
+            margin-top: 3rem;
+        }
+    
+        &__date{
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.3rem;
+            margin-left: 1.8rem;
+        }
+        
+        &__container{
+                margin-top: 1rem;
+                margin-left: 1.5rem;
+                position: relative;
+    
+            &__date{
+                display: inline-block;
+                font-family: "Open Sans";
+                font-weight: 600;
+                font-size: 1rem;
+                line-height: 1.2rem;
+                color:#A5A5A5;
+                margin-top: 0.5rem;
+                margin-left: 2rem;
+            }
+        
+            &__logo{
+                position: absolute;
+                margin-top: 0.4rem;
+            }
+        }
+    }
+    
+
+    &__box{
+        padding-top: 3rem;
+
+        &__name{
+            font-family: "Open Sans";
+            font-weight: 600;
+            font-size: 0.68rem;
+            line-height: 0.93rem;
+            color: #08A6E4;
+            margin-left: 2rem;
+
+            &__input{
+                border: 1px solid #95989A;
+                margin-left: 2rem;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                width: 19.5rem;
+            }
+        }
+    
+         
+    }
+
+    
+    &__checkbox{
+        position: absolute;
+        margin-left: 1.5rem;
+        margin-top: 0.2rem;
+    }
+
+    &__consent{
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        color: #707070;
+        margin-top: 2rem;
+        margin-left: 3.75rem;
+    }
+
+    &__button{
+        border-radius: 2.18rem;
+        background: #08A6E4;
+        color: white;
+        box-shadow: 5px 10px 14px 0px #07ACE64A;
+        border: transparent;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        margin-left: 7.25rem;
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .section__question{
+        margin-top: 6rem;
+        display:flex;
+        justify-content: center;
+
+        &__box{
+            display: flex;
+            flex-direction: column;
+        }
+        &__article{
+            margin-right: 3rem;
+        }
+    }
+}
+    

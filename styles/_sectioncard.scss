@@ -1,0 +1,267 @@
+.sectioncard{
+    background-color: #f7f7f7;
+    width: 100%;
+    max-height: 87rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+
+   &__cardfirst{
+    background-color: white;
+    margin-bottom: 3rem;
+    border: 1px solid #E8E9ED;
+    border-radius: 2%;
+    position: relative;
+   
+
+    &__img{
+
+        &__rectangle {
+            display: none;
+        }
+    
+        &__macbook2{
+            display: none;
+        }
+        &__macbook{
+            margin-top: 2.5rem;
+            margin-left: 0.4rem;
+            position: absolute;
+        }
+        &__rectanglepink{
+            margin-top: 1.3rem;
+            margin-left: 7rem; 
+        }
+    }
+
+    &__info{
+        &__title{
+            font-family: "Raleway";
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            margin-top: 4rem;
+            margin-right: 5rem;
+        }
+        &__text{
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 1.3rem;
+            text-align: start;
+            margin-top: 2rem;
+            margin-left: 1.4rem;
+            margin-right: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__title{
+        font-family: "Raleway";
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        margin-top: 4rem;
+        margin-right: 5rem;
+    }
+    &__text{
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        text-align: start;
+        margin-top: 2rem;
+        margin-left: 1.4rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+   }
+
+   &__cardsecond{
+        background-color: white;
+        margin-bottom: 3rem;
+        border: 1px solid #E8E9ED;
+        border-radius: 2%;
+        position: relative;
+
+        &__img{
+            &__iphone{
+                width: 10.9rem;
+                height: 8.4rem;
+                margin-top: 1.5rem;
+                position: absolute;
+            }
+            &__ellipseblue{
+                width: 8.25rem;
+                height: 8.23rem;
+                margin-top: 1rem;
+            }
+        }
+        &__info{
+            &__title{
+                font-family: "Raleway";
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                margin-top: 1.5rem;
+                text-align: start;
+                margin-left: 1.4rem;
+            }
+            &__text{
+                text-align: start;
+                font-family: "Open Sans";
+                font-weight: 400;
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                margin-top: 1rem;
+                margin-left: 1.4rem;
+                margin-right: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+   }
+   
+   &__cardthird{   
+        margin-bottom: 3rem;
+
+        &__text{
+            background-color: white;
+            border: 1px solid #E8E9ED;
+            border-radius: 2%;
+
+            &__title{
+                font-family: "Raleway";
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                margin-top: 1.5rem;
+                text-align: start;
+                margin-left: 1.4rem;
+            }
+
+            &__date{
+                text-align: start;
+                font-family: "Open Sans";
+                font-weight: 400;
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                margin-top: 1rem;
+                margin-left: 1.4rem;
+                margin-bottom: 2rem;
+            }
+        }
+        
+        &__img{
+            
+            &__trumpet{
+                position: absolute;
+                width: 18.48rem;
+                height: 13rem;
+                margin-top: 2.5rem;
+                margin-bottom: 3rem;
+            }
+        }       
+   }
+}
+@media screen and (min-width: 1000px){
+
+    .sectioncard{
+        padding-top: 6rem;
+
+        &__cardfirst{
+            width: 70%;
+            height: 23rem;
+            margin-left: 15%;
+            display: flex;
+            flex-direction: row-reverse;
+            position: relative;
+            justify-content: space-between;
+
+            &__img{
+                &__rectanglepink{
+                    display: none;
+                }
+                &__rectangle{
+                    display:block;  
+                    position: relative;
+                    top: 10%; 
+                    right: 40%;
+                           
+                }
+                &__macbook2{
+                    display: block;
+                    position: absolute;
+                    width: 24rem;
+                    height: 13.6rem;
+                    bottom: 10%;
+                    right: 14%;
+                }
+                &__macbook{
+                    display:none;
+                }
+            }
+            
+            &__info{
+                text-align: start;
+                width: 36%;
+                height: 70%;
+                border-bottom: 4px solid #FB3B64;
+                &__title{
+                    margin-left: 1.5rem;
+                }
+               
+            }
+           
+        }
+
+        &__cardsecond{
+            width: 70%;
+            height: 23rem;
+            margin-left: 15%;
+            display: flex;
+            justify-content: space-between;
+
+            &__info{
+                width: 36%;
+                text-align: end;
+                margin-top: 3rem;
+            }
+            &__img{
+                padding-left: 2rem;
+                &__iphone{
+                    width: 26.6rem;
+                    height: 20rem;
+                }
+                &__ellipseblue{
+                    width: 20rem;
+                    height: 20rem;
+                }
+            }
+        }
+
+        &__cardthird{
+            display: inline-flex;
+            justify-content: space-between;
+            width: 70%;
+            &__text{
+                display:flex;
+                flex-direction: column;
+                justify-content: start;
+                width: 60%;
+            }
+
+            &__img{
+                display: inline-flex;
+                justify-content: end;
+                max-width: 27.5rem;
+                position: relative;
+
+                &__trumpet{
+                    right: 23%;
+                    top: 10%;
+                    
+                }
+            }
+        }
+    }
+}
